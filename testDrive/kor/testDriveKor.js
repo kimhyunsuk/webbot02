@@ -32,7 +32,32 @@ function create(bot) {
                 ])
             ]);
             builder.Prompts.choice(session, msg, session.localizer.gettext(query.kor_en_Checker(session.message.text), "testDriveMenuList"));
-            
+
+            //facebook 동영상 테스트 START - 장상련 20170525
+            var msg = new builder.Message(session)
+                .textFormat(builder.TextFormat.xml)
+                .attachments([
+                    new builder.VideoCard(session)
+                        .title('그랜다이저')
+                        .autostart(true)
+                        .subtitle('Grandizer')
+                        .text("안녕하세요. 저는 현대자동차의 그랜저 ig를 소개하는 그랜다이저예요. \n\n 대화중 언제든지'그랜다이저' 라고 입력하면 초기 화면으로 돌아가요. \n\n Hi. My name is Grandizer. \n\n At any time, type 'Grandizer' to return to the initial screen. ")
+                        .image(builder.CardImage.create(session, img_path + "/images/img_car01.jpg"))
+                        //.images([
+                        //    builder.CardImage.create(session, img_path + "/images/img_car01.jpg")
+                        //])
+                        .media([
+                            { url: 'https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4' }
+                        ])
+                        .buttons([
+                            builder.CardAction.imBack(session, "한국어로 해줘", "한국어"),
+                            builder.CardAction.imBack(session, "hey there", "English")
+                        ])
+                ]);
+
+            session.send(msg);
+            //facebook 동영상 테스트 END - 장상련 20170525
+
             session.endDialog();
             responseTime = parseInt(date.getTime()) - parseInt(args.beginTime);
             query.insertHistoryQuery(args, responseTime, function (err, result) {
