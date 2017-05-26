@@ -130,7 +130,7 @@ function create(bot) {                                                  // funct
                             //    builder.CardImage.create(session, img_path + "/images/img_car01.jpg")
                             //])
                             .media([
-                                { url: 'http://webbot02.azurewebsites.net/openning.wav' }
+                                { url: 'https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4' }
                             ])
                             .buttons([
                                 builder.CardAction.imBack(session, "한국어로 해줘", "한국어"),
