@@ -84,6 +84,7 @@ function create(bot) {
                                         new builder.CardImage(session)
                                             .url(img_path + "/images/testDrive/testDriveReservation.jpg")
                                             .alt('contoso_flowers')
+                                            .tap(img_path + "/images/testDrive/testDriveReservation.jpg")
                                     ])
                                     .buttons([
                                         builder.CardAction.openUrl(session, "http://www.hyundai.com/kr/tdn/index.do", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")),
