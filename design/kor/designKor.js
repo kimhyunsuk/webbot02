@@ -89,8 +89,9 @@ function create(bot) {
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCream"))
                                 
                         ])
-                        .tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
-                             //builder.CardAction.openUrl(session, "http://www.hyundai.com/kr/tdn/index.do", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage"))
+                        //.tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
+                        .tap(builder.CardAction.openUrl(session, "http://webbot02.azurewebsites.net/hyundai/images/notiBrd.html", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
+                             //http://webbot02.azurewebsites.net/hyundai/images/notiBrd.html
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCreamCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
