@@ -89,7 +89,7 @@ function create(bot) {
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCream"))
                                 
                         ])
-                        .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/WC9/00060.jpg"))
+                        .tap(builder.CardAction..openUrl(session, "http://www.hyundai.com/kr/tdn/index.do"))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCreamCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
