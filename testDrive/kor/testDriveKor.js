@@ -77,20 +77,20 @@ function create(bot) {
             //query.getData(args);
             session.send(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationWelcomeMessage"));
             
-                                var onlineReserveCard = new builder.HeroCard(session)
-                                    .title(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationTitleName"))
-                                    .subtitle(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationSubtitleMessage"))
-                                    .images([
-                                        new builder.CardImage(session)
-                                            .url(img_path + "/images/testDrive/testDriveReservation.jpg")
-                                            .alt('contoso_flowers')
-                                            .tap(img_path + "/images/testDrive/testDriveReservation.jpg")
-                                    ])
-                                    .buttons([
-                                        builder.CardAction.openUrl(session, "http://www.hyundai.com/kr/tdn/index.do", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")),
-                                    ]);
-                                session.send(new builder.Message(session).addAttachment(onlineReserveCard));
-                                session.send(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationEndMessage"));
+            var onlineReserveCard = new builder.HeroCard(session)
+                .title(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationTitleName"))
+                .subtitle(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationSubtitleMessage"))
+                .images([
+                    new builder.CardImage(session)
+                        .url(img_path + "/images/testDrive/testDriveReservation.jpg")
+                        .alt('contoso_flowers')
+                        .tap(img_path + "/images/testDrive/testDriveReservation.jpg")
+                ])
+                .buttons([
+                    builder.CardAction.openUrl(session, "http://www.hyundai.com/kr/tdn/index.do", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")),
+                ]);
+            session.send(new builder.Message(session).addAttachment(onlineReserveCard));
+            session.send(session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationEndMessage"));
             
             
 
