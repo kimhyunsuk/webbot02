@@ -27,6 +27,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/20170302091059771443.jpg")
                         ])
+                        .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/20170302091059771443.jpg"))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorClickMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "color")),
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "interiorClickMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "interior")),
@@ -90,7 +91,7 @@ function create(bot) {
                                 
                         ])
                         //.tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
-                        .tap(builder.CardAction.openUrl(session, "http://webbot02.azurewebsites.net/hyundai/images/notiBrd.html", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
+                        .tap(builder.CardAction.openUrl(session, "https://codyhouse.co/demo/360-degrees-product-viewer/index.html", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCreamCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
