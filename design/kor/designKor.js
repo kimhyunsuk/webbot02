@@ -91,7 +91,6 @@ function create(bot) {
                         ])
                         //.tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
                         .tap(builder.CardAction.openUrl(session, "http://webbot02.azurewebsites.net/hyundai/images/notiBrd.html", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
-                             //http://webbot02.azurewebsites.net/hyundai/images/notiBrd.html
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCreamCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
@@ -111,8 +110,9 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/U9G/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "LunaGray"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/U9G/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/U9G/00060.jpg"))
                         ])
+                        .tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "LunaGrayCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
