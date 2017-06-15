@@ -42,6 +42,7 @@ function create(bot) {
             var msg = new builder.Message(session)
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments([
+                /*
                 new builder.HeroCard(session)
                         .title(session.localizer.gettext(query.kor_en_Checker(session.message.text), "priceGasoline2.4ModelMessage"))
                         .images([
@@ -50,7 +51,16 @@ function create(bot) {
                 ])
                         .buttons([
                     builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "gasoline2.4"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "gasoline2.4ClickMessage"))
-                ]),
+                ]) */
+                new builder.VideoCard(session)
+                        .title('그랜다이저')
+                        .autostart(true)
+                        .subtitle('Grandizer')
+                        .text('test')
+                        .media([
+                    { url: 'https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot' }
+                ])
+                        ,
                 new builder.HeroCard(session)
                         .title(session.localizer.gettext(query.kor_en_Checker(session.message.text), "priceGasoline3.0ModelMessage"))
                         .images([

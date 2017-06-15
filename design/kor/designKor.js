@@ -82,6 +82,14 @@ function create(bot) {
                 .attachmentLayout(builder.AttachmentLayout.carousel)
                 .attachments([
                     //AnimationCard
+                    new builder.VideoCard(session)
+                            .title('그랜다이저')
+                            .autostart(true)
+                            .subtitle('Grandizer')
+                            .text('test')
+                            .media([
+                        { url: 'https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot' }
+                    ]),
                     new builder.HeroCard(session)
                         .title(session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCream"))
 
