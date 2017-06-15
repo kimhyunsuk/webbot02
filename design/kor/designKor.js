@@ -130,7 +130,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/PG9/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "PanteraGray"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/PG9/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/PG9/00060.jpg"))
                         ])
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "PanteraGrayCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
@@ -141,7 +141,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/NB9/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "MidnightBlack"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/NB9/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/NB9/00060.jpg"))
                         ])
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "MidnightBlackCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
@@ -151,7 +151,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/V9R/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "ValentineRed"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/V9R/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/V9R/00060.jpg"))
                         ])
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "ValentineRedCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
@@ -161,7 +161,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/NU9/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "GrandBlue"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/NU9/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/NU9/00060.jpg"))
                         ])
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "GrandBlueCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
@@ -171,7 +171,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/S9C/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "ShadeBronze"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/S9C/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/S9C/00060.jpg"))
                         ])
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "ShadeBronzeCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
@@ -181,7 +181,7 @@ function create(bot) {
                         .images([
                             builder.CardImage.create(session, img_path + "/images/carDesign/TK9/00060.jpg")
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "KakiMetal"))
-                                .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/TK9/00060.jpg"))
+                                //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/TK9/00060.jpg"))
                         ])
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "KakiMetalCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
