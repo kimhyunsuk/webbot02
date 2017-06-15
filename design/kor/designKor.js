@@ -91,7 +91,7 @@ function create(bot) {
                                 
                         ])
                         //.tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
-                        .tap(builder.CardAction.openUrl(session, "https://codyhouse.co/demo/360-degrees-product-viewer/index.html", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
+                        //.tap(builder.CardAction.openUrl(session, "https://codyhouse.co/demo/360-degrees-product-viewer/index.html", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "whiteCreamCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
@@ -102,7 +102,7 @@ function create(bot) {
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "IonSilver"))
                                 
                         ])
-                        .tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/N9V/00060.jpg"))
+                        //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/N9V/00060.jpg"))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "IonSilverCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
@@ -113,7 +113,7 @@ function create(bot) {
                                 .alt(session.localizer.gettext(query.kor_en_Checker(session.message.text), "LunaGray"))
                                 //.tap(builder.CardAction.showImage(session, img_path + "/images/carDesign/U9G/00060.jpg"))
                         ])
-                        .tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
+                        //.tap(builder.CardAction.openUrl(session, "https://youtu.be/VQtonf1fv_s?list=PLNSKpl7JCPswwj_fWkfixq5L7QeZJA4Ot", session.localizer.gettext(query.kor_en_Checker(session.message.text), "onlineReservationUrlClickMessage")))
                         .buttons([
                             builder.CardAction.imBack(session, session.localizer.gettext(query.kor_en_Checker(session.message.text), "LunaGrayCilckMessage"), session.localizer.gettext(query.kor_en_Checker(session.message.text), "colorSelect"))
                         ]),
